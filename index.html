@@ -1,42 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scroll Effect</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <div style="height: 150%;">
-    <div class="home">
-        <div class="daw-wrapper">
-            <div class="header">
-                <div class="item">Home</div>
-                <div class="item">About</div>
-                <div class="item">Contact</div>
-            </div>
-            <div class="daw-body">
-                <div class="line"></div>
+    <audio id="audio" src="./audio/rfi-foward.mp3"></audio>
+    <div style="height: 400%;">
+        <div class="home">
+            <div class="daw-wrapper">
+                <div class="header">
+                    <div class="item">Home</div>
+                    <div class="item">About</div>
+                    <div class="item">Contact</div>
+                </div>
+                <div class="daw-body">
+                    <div class="line" id="line"></div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-    <div class="spacer"></div>
-    <script>// script.js
-        window.addEventListener('scroll', () => {
-            const line = document.querySelector('.line');
-            const scrollPosition = window.scrollY;
-            const windowHeight = window.innerHeight;
-            const docHeight = document.documentElement.scrollHeight;
-            
-            // Calculate the scroll percentage
-            const scrollPercent = (scrollPosition / (docHeight - windowHeight)) * 100;
+    <br>
 
-            const translateValue = scrollPercent * (window.innerWidth / 150);
-            
-            // Set the animation progress
-            line.style.transform = `translateX(${translateValue}px)`;
-        });
-    </script>
+    <p class="center"><img src="./images/insomic.jpg" alt="insOmic" class="profile"></p>
+    <h1 class="center head-text">I&nbsp;am&nbsp;<span style="color: red;" class="glitch"> insOmic</span>.</h1>
+    <br>
+    <p class="center paragraph" style="width: 85%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nunc
+        ipsum, tristique id magna quis, malesuada dapibus libero. Mauris ornare orci eu tempus vestibulum. Quisque
+        convallis faucibus orci, nec commodo turpis porta ac. In ut erat id dolor luctus eleifend ut sit amet dolor.
+        Phasellus libero est, congue ac nunc id, maximus gravida metus. Nulla id euismod nisi, sed finibus metus. Nullam
+        sollicitudin tellus a sem blandit mollis. Nam lacinia cursus libero. Sed bibendum neque at sem convallis
+        laoreet. Pellentesque aliquam ligula sit amet sem vestibulum, id varius mauris lobortis. Morbi id massa non ex
+        condimentum feugiat non et erat.
+
+        Vivamus pellentesque sem sit amet vehicula lacinia. Phasellus auctor laoreet luctus. Quisque vel tincidunt sem.
+        Praesent eu hendrerit erat. Mauris dignissim sagittis lorem, non consectetur lectus dictum eget. Donec at velit
+        quis massa placerat pharetra vitae id mi. Vivamus vestibulum cursus consectetur. Fusce semper metus eget ipsum
+        tempor, vel congue turpis placerat. Vivamus fringilla turpis dolor. Morbi non augue neque.
+
+        Curabitur vitae consectetur urna, id varius justo. Nullam sodales imperdiet pharetra. Quisque dapibus mauris eu
+        urna fermentum, sit amet facilisis tellus eleifend. Aenean sed aliquet sem. Sed lobortis urna eget urna gravida,
+        eget hendrerit lacus mattis. Nunc tempor tortor vitae arcu rutrum, nec maximus nibh malesuada. Morbi in justo
+        massa. Proin dictum orci a ante condimentum, nec tristique leo fringilla. Nullam commodo faucibus ante a
+        porttitor.
+
+        Fusce iaculis dolor vitae libero fermentum tempor in vel est. Duis vitae mauris eu nulla ullamcorper ornare.
+        Aliquam feugiat id metus sit amet volutpat. Aenean nec rutrum nisl. Duis iaculis semper leo nec egestas. Nam
+        volutpat odio quis massa rutrum, ut vestibulum dolor consectetur. Quisque in sagittis ante. Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque sed mattis ipsum, ac
+        varius justo. Quisque vitae felis non magna imperdiet gravida nec vel neque. Maecenas vel accumsan arcu. Integer
+        feugiat egestas semper. Integer suscipit orci id nisi sagittis, ac semper turpis ornare.
+
+        Donec eu mi nec neque facilisis consectetur a eget ligula. Nam auctor ante et justo fermentum, quis mattis erat
+        pharetra. Praesent suscipit sollicitudin lectus, eu ultricies arcu condimentum sit amet. Suspendisse iaculis
+        euismod congue. Nam leo ante, congue in risus eu, lobortis pretium mi. Curabitur id lobortis mi. Nunc vestibulum
+        ex quis laoreet convallis. Aliquam aliquam urna est, quis maximus magna eleifend nec.</p>
+    <br>
+    <h1 class="center head-text">Portfolio</h1>
+    <br>
+    <p class="center paragraph">I've worked on many soundstacks for videos, games and more.</p>
+    <br>
+    <div class="container">
+        <a href="https://store.steampowered.com/app/1943950/Escape_the_Backrooms/"><img src="./images/etb.webp"
+                class="icon portfolio-icon" title="Escape the Backrooms - Composer"></a>
+        <a href="https://www.youtube.com/@ins0mic"><img src="./images/insomic.jpg" class="icon portfolio-icon"
+                title="My YouTube - Composer"></a>
+    </div>
+    <br>
+    <h1 class="center head-text">Samples</h1>
+    <br>
+    <div class="container samples center" style="width: 85%;">
+        <br>
+        <audio src="./audio/Run For It.mp3" controls>Loading...</audio>
+        <audio src="./audio/You Day!.mp3" controls>Loading...</audio>
+        <audio src="./audio/King's Curfew.mp3" controls>Loading...</audio>
+        <audio src="./audio/Burnout.mp3" controls>Loading...</audio>
+        <br>
+    </div>
+    <p class="center">More on my YouTube!</p>
+    <br>
+    <h1 class="center head-text">Get in touch!</h1>
+    <br>
+    <div class="container">
+        <a href="https://discord.gg/7grxKXBXv2"><img src="./images/discord.jpg" class="icon portfolio-icon"
+                title="Discord"></a>
+        <a href="mailto:idonthavehisemail@gmail.com"><img src="./images/gmail.webp" class="icon portfolio-icon"
+                title="Email"></a>
+    </div>
+    <div style="height: 4vh;">
+        <p class="center">&copy; insOmic 2024</p>
+        <script src="./index.js"></script>
 </body>
+
 </html>
